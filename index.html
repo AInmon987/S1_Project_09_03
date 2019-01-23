@@ -83,7 +83,115 @@
 
             <fieldset>
                 <legend>Fonts</legend>
+                <label for="fontfamily">Font Family</label>
+                <select name="fontfamily" id="font">
+
+                    <optgroup label="Generic">
+                        <option value="default">Default</option>
+                        <option value="serif">serif</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                    </optgroup>
+
+                    <optgroup label="Specific">
+                        <option value="Arial">Arial</option>
+                        <option value="‘book Antiqua’">‘book Antiqua’</option>
+                        <option value="‘courier New’">‘courier New’</option>
+                        <option value="Geneva">Geneva</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="impact">impact</option>
+                        <option value="Palatino">Palatino</option>
+                        <option value="tahoma">tahoma</option>
+                        <option value="‘times New Roman’">‘times New Roman’</option>
+                    </optgroup>
+                </select>
+                <label for="fontstyle">Font Style</label>
+                <select name="fontstyle" id="style">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                    <option value="oblique">Oblique</option>
+                </select>
+
+                <label for="fontweight">Font Weight</label>
+                <select name="fontweight" id="weight">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                </select>
+
+                <label for="textdecoration">Text Decoration</label>
+                <select name=" textdecoration" id="decoration">
+                    <option value="none">None</option>
+                    <option value="line-through">Line-Through</option>
+                    <option value="overline">Overline</option>
+                    <option value="underline">Underline</option>
+                </select>
+
+                <label for="texttransform ">Text Transform</label>
+                <select name="texttransform" id="form">
+                    <option value=" none">None</option>
+                    <option value="capitalize">capitalize</option>
+                    <option value="lowercase">Lowercase</option>
+                    <option value="uppercase">Uppercase</option>
+                </select>
+
+                <label for="fontvariant ">Font Variant</label>
+                <select name="fontvariant" id="variant">
+                    <option value="normal">Normal</option>
+                    <option value="small-caps">Small-Caps</option>
+                </select>
             </fieldset>
+
+            <fieldset>
+                <legend>Colors</legend>
+
+                <label for="color"> Font color (hexadecimal)</label>
+                <input type="color" name="color" id="color" default="#000000" />
+
+                <label for="backgroundcolor">background color (hexadecimal)</label>
+                <input type="color" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" default="#FFFFFF">
+            </fieldset>
+
+            <fieldset>
+                <legend>Sizes</legend>
+                <div class="slider">
+                    <label for="fontsize"> Font size (px)</label>
+
+                    8
+                    <input type="range" name="fontsize" id="fontsize" min="8" max="40" step="1" value="14">
+                    40
+                </div>
+                <div class="slider">
+                    <label for="letterspacing">Letter spacing (px)</label>
+
+                    0
+                    <input type="range" name="letterspacing" id="letterspacing" min="0" max="10" default="0">
+                    10
+                </div>
+                <div class="slider">
+                    <label for="wordspacing">Word spacing (px)</label>
+
+                    0
+                    <input type="range" name="wordspacing" id="wordspacing" min="0" max="10" default="0">
+                    10
+                </div>
+
+                <div class="slider">
+                    <label for=" lineheight">Line Height (em)</label>
+                    0
+                    <input type="range" name="lineheight" id="lineheight" min="0" max="4" default="1">
+                    4
+                </div>
+
+                <div class="slider">
+                    <label for="textindent"> Text Indent (px)</label>
+                    0
+                    <input type="range" name="textindent" id="textindent" min="0" max="10" defalut="0">
+                    10
+                </div>
+            </fieldset>
+
         </form>
 
         <h2>Rendered Text</h2>
