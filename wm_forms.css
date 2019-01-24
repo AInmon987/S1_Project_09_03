@@ -14,12 +14,15 @@
 */
 
 /* Field Set Styles */
+/* the rule causes the fieldsets to not have a border, every fieldset will have a margin of 10px top bottom and 0px right left.
+The fieldsets will also increase in size. */
 fieldset {
     border: none;
     width: 60%;
     margin: 10px 0px 10px 0px;
 }
-
+/* the rule applies to the legends that are nested in the fieldsets and the rule causes the background-color
+to be white, take upp 100% of the screen.  */
 fieldset legend {
     background-color: rgb(232, 232, 232);
     width: 100%;
@@ -29,6 +32,7 @@ fieldset legend {
 
 
 /* DIV Styles */
+/* the rule is for the div with the class of slider and the rule pushes the content to the left, gains space top bottom nothing right to left. */
 div.slider {
     float: left;
     width: 60%;
@@ -38,7 +42,7 @@ div.slider {
 
 
 /* Control Styles */
-
+/* the rule is for the label, the rule makes the text push left, stack on eachother, and gain space top bottom. */
 label {
     clear: left;
     float: left;
@@ -47,28 +51,31 @@ label {
     margin: 2px 0px 2px 0px;
 
 }
-
+/* the rule is for the input and the select and the rule makes the elemets gain space top bottom and nothing right to left. */
 input,
 select {
     margin: 2px 0px 2px 0px;
 }
-
+/* the rule is for the inputs with the type of range, the rule makes the width to 60% */
 input[type="range"] {
     width: 60%;
 }
-
+/* the rule is for the select list and the rule makes each list stack on eachother, 
+pushed to the left.  */
 select {
     display: block;
     float: left;
     width: 120px;
 }
-
+/* The rule is for th inputs with the type of color and the rule makes the color options stack on eachother
+pushed to the left. */
 input[type="color"] {
     display: block;
     float: left;
     width: 75px;
 }
-
+/* the style is for the textarea and the rule makes the font bigger, the width of th box to 100%, 
+the hight will increase, and the botto will gain space.  */
 textarea {
     font-size: 1.5em;
     width: 100%;
@@ -79,18 +86,22 @@ textarea {
 
 
 /* Placeholder Styles */
+/* the rule is for the textarea and is for the webkit extension and the rule makes the 
+background white, the color of the text is pink, and the font size will increase to 1.5em  */
 textarea::-webkit-input-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255, 151, 151);
     font-size: 1.5em;
 }
-
+/* the rule is for the textarea and is for the moz extension and the rule makes the 
+background white, the color of the text is pink, and the font size will increase to 1.5em  */
 textarea::-moz-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255, 151, 151);
     font-size: 1.5em;
 }
-
+/* the rule is for the textarea and is for the mz extension and the rule makes the 
+background white, the color of the text is pink, and the font size will increase to 1.5em  */
 textarea:-moz-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255, 151, 151);

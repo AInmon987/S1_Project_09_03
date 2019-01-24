@@ -71,21 +71,24 @@
 
     <section>
         <h1>CSS Demo</h1>
+        <!-- Inserted the form so that the fields will show up. -->
         <form>
+            <!-- the textarea element will make an section to where the user can type in an section. -->
             <textarea name="sampleText" id="sampleBox" placeholder=" enter sample text and press the tab key" autofocus
                 tabindex="1" wrap="hard" />
             </textarea>
-
+<!-- The paragraph tag makes the text look like paragraph form on the page.  -->
             <p>
                 Select the css style values from the form below and preview the effect on the sample text in the
                 preview box.
             </p>
-
+<!-- The fieldset is for all of the different font styles and rules that can be applies to the users text. the labels are there to make sure that the text apppears on the
+page. The select is an list of options of what can be choosen for that topic.  -->
             <fieldset>
                 <legend>Fonts</legend>
                 <label for="fontfamily">Font Family</label>
                 <select name="fontfamily" id="font">
-
+<!-- the option group seperates the generic fonts from the specific fotns. -->
                     <optgroup label="Generic">
                         <option value="default">Default</option>
                         <option value="serif">serif</option>
@@ -94,7 +97,7 @@
                         <option value="cursive">cursive</option>
                         <option value="fantasy">fantasy</option>
                     </optgroup>
-
+<!-- the option group seperates the generic fonts from the specific fotns. -->
                     <optgroup label="Specific">
                         <option value="Arial">Arial</option>
                         <option value="‘book Antiqua’">‘book Antiqua’</option>
@@ -107,19 +110,20 @@
                         <option value="‘times New Roman’">‘times New Roman’</option>
                     </optgroup>
                 </select>
+                <!-- the label has the contetn of Font Style and the select is the list that has the option of normal, italic, oblique. -->
                 <label for="fontstyle">Font Style</label>
                 <select name="fontstyle" id="style">
                     <option value="normal">Normal</option>
                     <option value="italic">Italic</option>
                     <option value="oblique">Oblique</option>
                 </select>
-
+<!-- the labrl is for font weight, the select is a list that has the options of normal, bold. -->
                 <label for="fontweight">Font Weight</label>
                 <select name="fontweight" id="weight">
                     <option value="normal">Normal</option>
                     <option value="bold">Bold</option>
                 </select>
-
+<!-- the label is the contetn on the page of text decration and the select list has the options of none, line-though, overline, underline. -->
                 <label for="textdecoration">Text Decoration</label>
                 <select name=" textdecoration" id="decoration">
                     <option value="none">None</option>
@@ -135,14 +139,15 @@
                     <option value="lowercase">Lowercase</option>
                     <option value="uppercase">Uppercase</option>
                 </select>
-
+<!-- the label is for font variant and the select is a type of list that has two options of normal, small-caps. -->
                 <label for="fontvariant ">Font Variant</label>
                 <select name="fontvariant" id="variant">
                     <option value="normal">Normal</option>
                     <option value="small-caps">Small-Caps</option>
                 </select>
             </fieldset>
-
+<!-- The fieldset is for the topic colors. The legend is there to make sure the text appears on the page
+the label is to make sure each inut has an title. The inputs both have defualts of #000000, #FFFFFFF. -->
             <fieldset>
                 <legend>Colors</legend>
 
@@ -152,7 +157,9 @@
                 <label for="backgroundcolor">background color (hexadecimal)</label>
                 <input type="color" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" default="#FFFFFF">
             </fieldset>
-
+<!-- The field set is for range sliders. Each label and input will have a div and a class of slider
+Each label will have different text for each topic. The inputs have a specific min and max. The have specific defualts, where the slider wil sit everytime the page is renderd
+ Each input will have different values and numbers before the input nd after the input. Each div has an top and the div has an class of slider. -->
             <fieldset>
                 <legend>Sizes</legend>
                 <div class="slider">
